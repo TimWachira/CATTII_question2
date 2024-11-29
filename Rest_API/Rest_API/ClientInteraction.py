@@ -35,3 +35,12 @@ def get_all_products():
     else:
         print(f"Failed to fetch products. Status code:, response.status_code")
         print("Error details:", response.json())
+
+#Example
+if __name__ == "__main__":
+    
+    #Adds a new product 
+    add_product("Cartoon", "Spongebob", 2000.0)
+    
+    # Retrieve and print all products
+    get_all_products()
